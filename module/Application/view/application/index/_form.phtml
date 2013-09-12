@@ -1,0 +1,14 @@
+<?php
+// Render the opening tag
+echo $this->form()->openTag($form);
+?>
+			<?php echo $this->formRow($business->get('name')); ?>
+
+			<?php $liability = $business->get('liability'); ?>
+
+			<?php echo $this->formRow($liability->get('capitalStock')); ?>
+
+
+<?php echo $this->formSubmit($form->get('submit')) ?>
+
+<?php echo $this->form()->closeTag() ?>
