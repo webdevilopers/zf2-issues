@@ -1,0 +1,16 @@
+<?php
+// within a view script
+$form = $this->form;
+$form->prepare();
+
+#$form->setAttribute('action', $this->url('application/index/create'));
+$form->setAttribute('novalidate', 'novalidate');
+
+// Set the method attribute for the form
+$form->setAttribute('method', 'post');
+#$form->setAttribute('method', 'get');
+
+$business = $form->get('business');
+
+include '_form.phtml';
+?>

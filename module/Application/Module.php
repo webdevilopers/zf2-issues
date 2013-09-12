@@ -36,4 +36,15 @@ class Module
             ),
         );
     }
+
+   	public function getFormElementConfig()
+   	{
+   		return array(
+   			'invokables' => array(
+   				'BusinessFieldset' => 'Application\Form\BusinessFieldset',
+   				'CreateBusiness' => 'Application\Form\CreateBusiness',
+   				'LiabilityFieldset' => 'Application\Form\LiabilityFieldset',
+  	   		),
+   		);
+   	}
 }
